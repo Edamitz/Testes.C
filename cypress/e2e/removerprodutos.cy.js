@@ -43,7 +43,7 @@ describe('Testes de Carrinho - Login e Remover Itens', () => {
         cy.get('[data-test="remove-sauce-labs-backpack"]').click();  // Remove o item
         
         // Passo 8: Espera para garantir que a remoção foi aplicada
-        cy.wait(1000);  // Aguarda 1 segundo para garantir que a remoção foi realizada
+        cy.wait(1000);  // Adicionado o timeout para aguardar 1 segundo e garantir que a remoção foi realizada
         
         // Passo 9: Verificar se o carrinho está vazio
         cy.get('.shopping_cart_badge').should('not.exist');  // Verifica se o ícone de carrinho foi removido
