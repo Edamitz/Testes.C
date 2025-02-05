@@ -22,6 +22,6 @@ it.only('login com sucesso e adiciona itens ao carrinho', () => {
     cy.get('[data-test="add-to-cart-sauce-labs-fleece-jacket"]').click();  // Adiciona o item "Sauce Labs Fleece Jacket"
   
     // Passo 7: Verificar se o carrinho tem 3 itens
-    cy.get('.shopping_cart_badge').should('have.text', '3');  // Verifica se há 3 itens no carrinho
+    cy.get('.shopping_cart_badge').should('have.text', '3');  // Verifica se há 3 itens dentro do carrinho
   });
   
