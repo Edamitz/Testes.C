@@ -13,6 +13,7 @@ describe('Login Tests', () => {
     cy.url().should('include', '/inventory.html');  // A URL deve incluir /inventory.html
   });
 
+    // Teste para login com credenciais inválidas
   it('login com credenciais inválidas', () => {
     cy.visit('https://www.saucedemo.com/');
     
