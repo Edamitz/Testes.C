@@ -12,7 +12,7 @@ it('login com credenciais válidas e clicar em About', () => {
     // Passo 3: Verificar se foi redirecionado para a página de inventário
     cy.url().should('include', '/inventory.html');
     
-    // Passo 4: Clicar no botão do menu (ID react-burger-menu-btn)
+    // Passo 4: Clicar no botão do menu 
     cy.get('#react-burger-menu-btn').click();
     
     // Passo 5: Clicar no link "About" no menu lateral
