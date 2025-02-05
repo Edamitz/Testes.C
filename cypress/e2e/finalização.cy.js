@@ -49,7 +49,7 @@ describe('Testes de Finalização de Compra', () => {
 cy.get('.complete-header').should('contain.text', 'Thank you for your order!');  // Verifica se a mensagem de sucesso é exibida
 
  // Passo 15: Clicar no botão "Back Home" e verificar redirecionamento
- cy.get('[data-test="back-to-products"]').click();  // Clica no botão Back Home
+ cy.get('[data-test="back-to-products"]').click();  // Clica no botão Back Home 
    
  // Passo 16: Verificar se foi redirecionado para a página de inventário
  cy.url().should('include', '/inventory');  // Verifica se a URL contém /inventory, indicando que estamos na página inicial de produtos
